@@ -3,6 +3,7 @@
 #include "literals.h"
 #include "types.h"
 #include "automatic_type_deduction.h"
+#include "casts.h"
 
 
 int main() {
@@ -11,5 +12,10 @@ int main() {
 	automatic_type_deduction_sample_exercise();
 	decltype_example();
 	automatic_type_deduction_exercise_one();
+	example_bad_casting();
+	example_static_cast();
+	const_cast_example();
+	reinterpret_cast_example();
+	type_information_example();
 	return 0;
 }
