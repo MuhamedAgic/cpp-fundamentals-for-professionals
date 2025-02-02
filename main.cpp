@@ -4,6 +4,7 @@
 #include "types.h"
 #include "automatic_type_deduction.h"
 #include "casts.h"
+#include "unified_initialization.h"
 
 
 int main() {
@@ -17,5 +18,6 @@ int main() {
 	const_cast_example();
 	reinterpret_cast_example();
 	type_information_example();
+	initializer_list_example();
 	return 0;
 }
