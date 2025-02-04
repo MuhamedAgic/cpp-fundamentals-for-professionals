@@ -6,6 +6,7 @@
 #include "casts.h"
 #include "unified_initialization.h"
 #include "const_constexpr_volatile.h"
+#include "move_semantics_perfect_forwarding.h"
 
 
 int main() {
@@ -22,5 +23,10 @@ int main() {
 	initializer_list_example();
 	constexpr_exercise_one();
 	volatile_example();
+	lr_value_example();
+	copy_example();
+	move_example();
+	move_semantics_exercise_one();
+	perfect_forwarding_exercise_one();
 	return 0;
 }
