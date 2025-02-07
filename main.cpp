@@ -7,6 +7,7 @@
 #include "unified_initialization.h"
 #include "const_constexpr_volatile.h"
 #include "move_semantics_perfect_forwarding.h"
+#include "functions.h"
 
 
 int main() {
@@ -28,5 +29,7 @@ int main() {
 	move_example();
 	move_semantics_exercise_one();
 	perfect_forwarding_exercise_one();
+	closure_with_lambdas_example();
+	functions_exercise_one_fix();
 	return 0;
 }
