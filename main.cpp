@@ -9,6 +9,7 @@
 #include "move_semantics_perfect_forwarding.h"
 #include "functions.h"
 #include "classes_and_objects.h"
+#include "abstract_classes.h"
 
 
 int main() {
@@ -39,5 +40,10 @@ int main() {
 	func_obj_example();
 	call_operator_exercise_one();
 	union_example();
+	abstract_classes_exercise_one();
+	example_constructor_inheriting();
+	constructor_inheritance_exercise();
+	override_final_exercise();
+	multiple_inheritance_example();
 	return 0;
 }
