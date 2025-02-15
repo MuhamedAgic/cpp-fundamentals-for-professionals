@@ -8,6 +8,7 @@
 #include "const_constexpr_volatile.h"
 #include "move_semantics_perfect_forwarding.h"
 #include "functions.h"
+#include "classes_and_objects.h"
 
 
 int main() {
@@ -31,5 +32,12 @@ int main() {
 	perfect_forwarding_exercise_one();
 	closure_with_lambdas_example();
 	functions_exercise_one_fix();
+	initializer_for_instances_exercise_one();
+	constructor_delegation_example();
+	delete_exercise_one();
+	explicit_conversion_exercise_one();
+	func_obj_example();
+	call_operator_exercise_one();
+	union_example();
 	return 0;
 }
