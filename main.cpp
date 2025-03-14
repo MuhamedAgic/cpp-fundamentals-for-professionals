@@ -10,9 +10,12 @@
 #include "functions.h"
 #include "classes_and_objects.h"
 #include "abstract_classes.h"
+#include "templates.h"
 
 
 int main() {
+
+
 	literals_exercise();
 	undefined_behaviour_example();
 	automatic_type_deduction_sample_exercise();
@@ -45,5 +48,10 @@ int main() {
 	constructor_inheritance_exercise();
 	override_final_exercise();
 	multiple_inheritance_example();
+	exercise_one();
+	template_inheritance_example();
+	class_template_exercise();
+	friends_exercise();
+
 	return 0;
 }
