@@ -14,8 +14,6 @@
 
 
 int main() {
-
-
 	literals_exercise();
 	undefined_behaviour_example();
 	automatic_type_deduction_sample_exercise();
@@ -52,6 +50,15 @@ int main() {
 	template_inheritance_example();
 	class_template_exercise();
 	friends_exercise();
-
+	template_parameters_exercise();
+	variadic_templates_example();
+	template_arguments_exercise();
+	getPrimaryTypeCategoryExample();
+	specialization_exercise();
+	CRTP_example();
+	example_static_polymorphism();
+	crtp_exercise();
+	crtp_exercise_two();
+	object_oriented_crtp_exercise_three();
 	return 0;
 }
