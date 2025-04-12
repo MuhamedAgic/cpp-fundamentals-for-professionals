@@ -11,6 +11,7 @@
 #include "classes_and_objects.h"
 #include "abstract_classes.h"
 #include "templates.h"
+#include "utilities.h"
 
 
 int main() {
@@ -60,5 +61,7 @@ int main() {
 	crtp_exercise();
 	crtp_exercise_two();
 	object_oriented_crtp_exercise_three();
+	std_bind_std_function_exercise();
+	test_div_mod_exercise();
 	return 0;
 }
