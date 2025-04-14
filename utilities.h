@@ -6,7 +6,7 @@
 #include <vector>
 #include <utility>
 #include <tuple>
-
+#include <type_traits>
 
 void std_bind_std_function_exercise() {
 
@@ -95,3 +95,35 @@ void test_div_mod_exercise() {
 
     std::cout << std::endl;
 }
+
+
+// Exercise
+// 
+// Using the type traits library, write a program that performs the following tasks :
+// 
+// Modify an int type at compile time by completing the following tasks :
+// 
+// Add const to the type.
+// Remove const from ther type.
+// Compare the type with const int.
+// Note : Use the relevant header files.
+
+void exercise_type_traits() {
+    int a = 0;
+    // i dont understand this, cant i just const cast here?
+
+    // the solution...
+    std::cout << std::boolalpha << std::endl;
+
+    std::cout << "std::is_const<std::add_const<int>::type>::value: " << std::is_const<std::add_const<int>::type>::value << std::endl;
+    std::cout << "std::is_const<std::remove_const<const int>::type>::value: " << std::is_const<std::remove_const<const int>::type>::value << std::endl;
+
+    std::cout << std::endl;
+    typedef std::add_const<int>::type myConstInt;
+    std::cout << "std::is_const<myConstInt>::value: " << std::is_const<myConstInt>::value << std::endl;
+    typedef const int myConstInt2;
+    std::cout << "std::is_same<myConstInt, myConstInt2>::value: " << std::is_same<myConstInt, myConstInt2>::value << std::endl;
+
+    std::cout << std::endl;
+}
+

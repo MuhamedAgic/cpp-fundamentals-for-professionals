@@ -63,5 +63,6 @@ int main() {
 	object_oriented_crtp_exercise_three();
 	std_bind_std_function_exercise();
 	test_div_mod_exercise();
+	exercise_type_traits();
 	return 0;
 }
